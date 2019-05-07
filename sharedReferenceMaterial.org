@@ -27,3 +27,8 @@ C-c C-x ;: countdown timer
 
 * linux
 * latex
+* bash
+** run a script from anywhere
+1. make sure /usr/local/bin is in your path: echo $PATH
+2. copy the file to this location using sudo:
+=sudo mv scriptName.sh /usr/local/bin/scriptName.sh=
