@@ -1,0 +1,29 @@
+* emacs
+** Save keybinding shortcut to .emacs 
+1. Define the macro using F3/F4
+2. Use *M-x kmacro-name-last-macro*
+3. Enter the name of your macro
+4. Open your *.emacs* file
+5. *M-x insert-kbd-macro* (this will insert the elisp code in the current buffer)
+6. Enter the name of your macro
+7. Add the line *(global-set-key (kbd "=M-s p=") '=nameOfYourMacro=)* (define the keybinding shortcut)
+
+** dired
+d: mark as deleted (x to confirm)
+u: unmark a file marked as to be deleted
+q: go up one level
+space: go to next file
+upper arrow key: go to previous file 
+m: select a file
+u: unmark selected file
+M-DEL: unmark all selected files
++: create a directory
+%m \.pdf$: mark all files ending by .pdf
+
+** timer
+C-c C-x 0: start the timer 
+C-c C-x _: stop the timer
+C-c C-x ;: countdown timer
+
+* linux
+* latex
