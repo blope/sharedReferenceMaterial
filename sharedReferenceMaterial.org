@@ -26,6 +26,8 @@ C-c C-x _: stop the timer
 C-c C-x ;: countdown timer
 
 * linux
+** keyboard shortcuts
+   + Ctrl+Alt+T : Launch a terminal
 * latex
 * bash
 ** run a script from anywhere
