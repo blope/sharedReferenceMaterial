@@ -25,9 +25,32 @@ C-c C-x 0: start the timer
 C-c C-x _: stop the timer
 C-c C-x ;: countdown timer
 
+** spell-checker: ispell
+=M-x ispell-buffer=: open the spell checker
+=i=: add the current word to the dictionary
+=SPC=: leave the word unchanged and go to the next one
 * linux
 ** keyboard shortcuts
    + Ctrl+Alt+T : Launch a terminal
+** update 
+1. update the packages available via apt-get
+   - =sudo apt-get update=
+2. install the newer version of all packages already installed (doesn't install new distribution or kernel)
+   - =sudo apt-get upgrade=
+3. see what package can be upgraded
+   - =sudo apt update=
+   - =apt list --upgradable=
+4. upgrade the linux distribution or kernel
+   - =sudo apt-get dist-upgrade=
+5. upgrade to new release (ex: from 16.04 LTS to 18.04 LTS)
+   - =sudo do-release-upgrade=
+   - Choose "Keep the local version currently installed"
+** remove a software
+1. removing a package with the personalized settings
+   - =sudo apt-get purge packageName=
+2. removing a package but keeping the configuration files/plugins and settings
+   - =sudo apt-get remove packageName=
+
 * latex
 * bash
 ** run a script from anywhere
