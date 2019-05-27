@@ -57,3 +57,22 @@ C-c C-x ;: countdown timer
 1. make sure /usr/local/bin is in your path: echo $PATH
 2. copy the file to this location using sudo:
 =sudo mv scriptName.sh /usr/local/bin/scriptName.sh=
+** ubuntu post install script
+#!/bin/bash
+
+# update the packages available via apt-get
+sudo apt-get update
+# install the newer version of all packages already installed
+yes | sudo apt-get upgrade
+
+# install all packages
+yes | sudo apt-get install nautilus-dropbox emacs24 texlive-full vlc deluge gparted
+# skype
+wget https://go.skype.com/skypeforlinux-64.deb
+yes | sudo apt install ./skypeforlinux-64.deb
+
+# restart nautilus
+nautilus -q
+# create directory for linux directories
+mkdir ~/foldersL
+mv Documents Desktop Downloads Music Pictures Public Templates Videos foldersL
