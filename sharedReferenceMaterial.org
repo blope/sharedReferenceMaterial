@@ -42,6 +42,7 @@ C-c C-x ;: countdown timer
    - =apt list --upgradable=
 4. upgrade the linux distribution or kernel
    - =sudo apt-get dist-upgrade=
+   - Install the UKUU (Ubuntu Kernel Update Utility) software to manage kernel update.
 5. upgrade to new release (ex: from 16.04 LTS to 18.04 LTS)
    - =sudo do-release-upgrade=
    - Choose "Keep the local version currently installed"
