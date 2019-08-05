@@ -34,9 +34,9 @@ C-c C-x ;: countdown timer
    + Ctrl+Alt+T : Launch a terminal
 ** update 
 1. update the packages available via apt-get
-   - =sudo apt-get update=
+   - =sudo apt update=
 2. install the newer version of all packages already installed (doesn't install new distribution or kernel)
-   - =sudo apt-get upgrade=
+   - =sudo apt upgrade=
 3. see what package can be upgraded
    - =sudo apt update=
    - =apt list --upgradable=
